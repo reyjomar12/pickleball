@@ -8,29 +8,46 @@
   </head>
   <body>
     <div class="canvas-stage">
-      <div class="board-window">
-        <div class="board-grid">
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
-          <div class="green-panel"></div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <span class="brand">Pickle</span>
+        <div class="nav-links">
+          <a class="nav-link" href="#page1">Page 1</a>
+          <a class="nav-link" href="#page2">Page 2</a>
         </div>
-        <div class="blue-band"></div>
-      </div>
+      </nav>
 
-      <div class="info-card">
-        <h2>This is sample good title</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesentium
-          quasi quia voluptatibus nobis, eaque iusto? Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit..
-        </p>
-        <button>Learn More</button>
-      </div>
+      <section class="page-section" id="page1" aria-label="Page 1">
+        <div class="board-window">
+          <div class="board-grid">
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+            <div class="green-panel"></div>
+          </div>
+          <div class="blue-band"></div>
+        </div>
+
+        <div class="info-card">
+          <h2>This is sample good title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesentium
+            quasi quia voluptatibus nobis, eaque iusto? Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit..
+          </p>
+          <button>Learn More</button>
+        </div>
+      </section>
+
+      <section class="page-section" id="page2" aria-label="Page 2">
+        <div class="info-card">
+          <h2>Page 2</h2>
+          <p>Welcome to the next page.</p>
+        </div>
+      </section>
     </div>
   </body>
 </html>
