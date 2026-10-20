@@ -51,7 +51,7 @@ body {
   justify-content: space-between;
   padding: 4px 20px;
   border-radius: 7px;
-  background: #111a31;
+  background: #029121;
   transform: translateX(-50%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
@@ -80,6 +80,7 @@ body {
   cursor: pointer;
 }
 
+
 /* Courts Layout */
 .courts-pair {
   display: grid;
@@ -91,13 +92,12 @@ body {
 
 .board-window {
   position: relative;
-  width: 100%;
-  aspect-ratio: 1;
+  width: 360px;
+  aspect-ratio: 3 / 5; 
   background: #dfe1df;
   border: 1px solid #111;
   overflow: hidden;
 }
-
 .board-grid {
   position: absolute;
   inset: 0;
