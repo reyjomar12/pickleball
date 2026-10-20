@@ -195,4 +195,12 @@ body {
   .info-card {
     width: 72vw;
   }
+
+  }
+
+/* Paste the responsive media query right here at the bottom */
+@media (max-width: 768px) {
+  .courts-pair {
+    grid-template-columns: 1fr;
+  }
 }
