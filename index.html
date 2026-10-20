@@ -3,22 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reference Match</title>
+    <title>SawaDika</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <div class="canvas-stage">
+      <!-- Navigation Bar -->
       <nav class="top-nav" aria-label="Main navigation">
-        <span class="brand">AA</span>
+        <span class="brand">AAA</span>
         <div class="nav-links">
-          <a class="nav-link" href="#page1">Page 1</a>
-          <a class="nav-link" href="#page2">Page 2</a>
+          <a class="nav-link" href="#page1">Home</a>
+          <a class="nav-link" href="#page2">About</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
+          <a class="nav-link" href="#Reserve">Reserve A Court</a>
         </div>
       </nav>
 
-      <section class="page-section" id="page1" aria-label="Page 1">
+      <!-- HOME SECTION -->
+      <section class="page-section" id="page1" aria-label="Home">
         <div class="courts-pair">
-          <div class="board-window">
+          <!-- Court 1 -->
+          <div class="board-window court-1">
             <div class="board-grid">
               <div class="green-panel"></div>
               <div class="green-panel"></div>
@@ -27,7 +34,9 @@
             </div>
             <div class="blue-band"></div>
           </div>
-          <div class="board-window">
+
+          <!-- Court 2 -->
+          <div class="board-window court-2">
             <div class="board-grid">
               <div class="green-panel"></div>
               <div class="green-panel"></div>
@@ -36,25 +45,89 @@
             </div>
             <div class="blue-band"></div>
           </div>
-        </div>
 
-        
+          
 
-        <div class="info-card">
-          <h2>This is sample good title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesentium
-            quasi quia voluptatibus nobis, eaque iusto? Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit..
-          </p>
-          <button>Learn More</button>
+
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="page-section about-section" id="page2" aria-label="About">
+        <div class="about-container">
+          <div class="about-header">
+            <div>
+              <h2>About Pickleball</h2>
+              <p class="about-subtitle">
+                At SawaDika Pickleball Club, we are passionate about community, health, and inclusive play. Based on our 3-court setup (as seen on our Home page), we provide a vibrant space for all skill levels to connect and grow. Experience the fun, energy, and social spirit of the world's fastest-growing sport.
+              </p>
+            </div>
+            <a href="#page1" class="back-home-btn">Back to Home</a>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-item">
+              <span class="about-num">1.</span>
+              <h3>WHO WE ARE</h3>
+              <p>We are a dedicated Pickleball community, from beginners to competitive players, fostering a welcoming environment.</p>
+            </div>
+            <div class="about-item">
+              <span class="about-num">2.</span>
+              <h3>WHAT IS PICKLEBALL?</h3>
+              <p>A paddle sport combining elements of tennis, badminton, and ping-pong, played on a smaller court with a perforated ball.</p>
+            </div>
+            <div class="about-item">
+              <span class="about-num">3.</span>
+              <h3>OUR COURT DESIGN</h3>
+              <p>Features three professional-grade indoor courts (seen on our Home page) and a comfortable pro-shop and player lounge.</p>
+            </div>
+            <div class="about-item">
+              <span class="about-num">4.</span>
+              <h3>GET INVOLVED</h3>
+              <p>Join our introductory clinics, weekly social mixers, and club tournaments. All you need is a paddle and the desire to play.</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="page-section" id="page2" aria-label="Page 2">
-        <div class="info-card">
-          <h2>Page 2</h2>
-          <p>Welcome to the next page.</p>
+      <!-- CONTACT SECTION -->
+      <section class="page-section contact-section" id="contact" aria-label="Contact Us">
+        <div class="contact-container">
+          <!-- Left Info Column -->
+          <div class="contact-info">
+            <div class="contact-icon">&#9993;</div>
+            <h2>For inquiries and court bookings, please email:</h2>
+            <a href="mailto:hello@sawadikapickleball.com" class="contact-email">hello@sawadikapickleball.com</a>
+            <p class="contact-subtext">or send a message via this form</p>
+            <a href="#page1" class="contact-back-btn">Back to Home</a>
+          </div>
+
+          <!-- Right Form Column -->
+          <form class="contact-form" onsubmit="event.preventDefault();">
+            <h3>Contact</h3>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Write a message</label>
+              <textarea id="message" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
         </div>
       </section>
     </div>
